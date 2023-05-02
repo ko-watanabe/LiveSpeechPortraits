@@ -1,0 +1,12 @@
+# Heavy files
+results
+data
+datasets
+util
+
+# No need files
+.DS_Store
+.vscode
+options
+models
+funcs

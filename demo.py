@@ -63,7 +63,7 @@ if __name__ == '__main__':
     opt = parser.parse_args()
     device = torch.device(opt.device)
     with open(join('./config/', opt.id + '.yaml')) as f:
-        config = yaml.load(f)
+        config = yaml.safe_load(f)
     data_root = join('./data/', opt.id)
     # create the results folder
     audio_name = os.path.split(opt.driving_audio)[1][:-4]
